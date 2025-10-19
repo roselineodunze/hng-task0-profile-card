@@ -18,8 +18,9 @@ body {
 
 .profile-container {
   position: relative;
-  height: 80%;
-  width: 500px;
+  height: 60%;
+  width: 90%;
+  max-width: 500px;
   border-radius: 30px;
   padding: 2px;
   overflow: hidden;
@@ -209,4 +210,10 @@ footer button:nth-child(2){
     background-color: rgb(13, 79, 185);
     color: white;
     
+}
+
+@media (min-width: 768px) {
+  .profile-container{
+    height: 80%;
+  }
 }
