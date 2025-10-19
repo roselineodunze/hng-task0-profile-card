@@ -2,6 +2,8 @@
 
 This is my submission for Task 0 of the HNG Internship 13. The task was to create a simple profile card using HTML, CSS, and JavaScript that displays basic information about me.
 
+Check it out: https://hng-task0-profile-card.vercel.app/
+
 🧾 Features
     ✅ Responsive profile card layout
     ✅ Clean design using HTML & CSS
