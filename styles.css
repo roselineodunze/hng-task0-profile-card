@@ -1,9 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 body {
+  overflow: hidden;
   height: 100dvh;
   background-color: rgba(170, 188, 177, 0.854);
   display: flex;
@@ -20,7 +23,7 @@ body {
   position: relative;
   height: 80%;
   width: 90%;
-  max-width: 500px;
+  max-width: 470px;
   border-radius: 30px;
   padding: 2px;
   overflow: hidden;
