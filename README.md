@@ -31,5 +31,5 @@ Check it out: https://hng-task0-profile-card.vercel.app/
 🙋‍♂️ About Me
 
     Name: Roseline Odunze
-    Slack Username: @yourSlackUsername
+    Slack Username: Roseline Odunze
     Track: Frontend
