@@ -217,12 +217,12 @@ footer button:nth-child(2) {
     height: 80%;
   }
   .username {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .username-container h4,
   .location-time-container div {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .user-bio {
