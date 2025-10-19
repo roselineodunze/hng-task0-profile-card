@@ -9,8 +9,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
-  background-image: url('/images/blue.png');
+  font-family: "Roboto", sans-serif;
+  background-image: url("/images/blue.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
 
 .profile-container {
   position: relative;
-  height: 80%;
+  height: 70%;
   width: 90%;
   max-width: 500px;
   border-radius: 30px;
@@ -28,14 +28,14 @@ body {
   flex-direction: column;
   background: linear-gradient(
     35deg,
-    #e5f2fa 0%,     /* Color A starts */
-    #e5f2fa 18%,    /* Color A ends */
-    #efe7fe 22%,    /* Color B starts */
-    #efe7fe 31%,    /* Color B ends */
-    #f5f1f1 53%,    /* Color C starts */
-    #f5f1f1 76%,    /* Color C ends */
-    #e5f2fa 80%,    /* Color D starts */
-    #e5f2fa 100%    /* Color D ends */
+    #e5f2fa 0%,
+    /* Color A starts */ #e5f2fa 18%,
+    /* Color A ends */ #efe7fe 22%,
+    /* Color B starts */ #efe7fe 31%,
+    /* Color B ends */ #f5f1f1 53%,
+    /* Color C starts */ #f5f1f1 76%,
+    /* Color C ends */ #e5f2fa 80%,
+    /* Color D starts */ #e5f2fa 100% /* Color D ends */
   );
 }
 
@@ -117,13 +117,14 @@ body {
   font-size: 15px;
 }
 
-.username-container h4,  .location-time-container div{
+.username-container h4,
+.location-time-container div {
   font-size: 10px;
   font-weight: 400;
   color: #6c6a6a;
 }
 
-.location-time-container{
+.location-time-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -136,12 +137,12 @@ body {
   gap: 3px;
 }
 
-address{
+address {
   font-style: normal;
 }
 
 .user-bio {
-  font-size: 10px;
+  font-size: 13px;
   margin-top: 16px;
   margin-bottom: 20px;
   color: #4c4b4b;
@@ -186,40 +187,42 @@ address{
   background-color: rgb(235, 195, 235);
 }
 
-footer{
-    width: 100%;
-    display: flex;
-    gap: 15px;
+footer {
+  width: 100%;
+  display: flex;
+  gap: 15px;
 }
 
-footer button{
-    height: 40px;
-    width: 100%;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: 500;
+footer button {
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-footer button:nth-child(1){
-    border: solid 1px rgb(219, 222, 226);
-    background-color: white;
-    
+footer button:nth-child(1) {
+  border: solid 1px rgb(219, 222, 226);
+  background-color: white;
 }
 
-footer button:nth-child(2){
-    border: none;
-    background-color: rgb(13, 79, 185);
-    color: white;
-    
+footer button:nth-child(2) {
+  border: none;
+  background-color: rgb(13, 79, 185);
+  color: white;
 }
 
 @media (min-width: 768px) {
-  .username{
-    font-size: 20px;
+  .profile-container {
+    height: 80%;
+  }
+  .username {
+    font-size: 25px;
   }
 
-  .username-container h4,  .location-time-container div{
-    font-size: 15px;
+  .username-container h4,
+  .location-time-container div {
+    font-size: 13px;
   }
 
   .user-bio {
