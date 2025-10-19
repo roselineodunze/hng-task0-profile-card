@@ -115,12 +115,12 @@ body {
 
 .username {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .username-container h4,
 .location-time-container div {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   color: #6c6a6a;
 }
@@ -143,22 +143,22 @@ address {
 }
 
 .user-bio {
-  font-size: 15px;
-  margin-top: 16px;
-  margin-bottom: 20px;
+  font-size: 13px;
+  margin-top: 14px;
+  margin-bottom: 18px;
   color: #4c4b4b;
 }
 
 .about-section h3 {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .about-list {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 10px 0 18px 0;
-  font-size: 14px;
+  margin: 8px 0 16px 0;
+  font-size: 12px;
 }
 
 .about-list li {
@@ -195,10 +195,10 @@ footer {
 }
 
 footer button {
-  height: 40px;
+  height: 38px;
   width: 100%;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -218,4 +218,28 @@ footer button:nth-child(2) {
     font-size: 28px;
   }
 
+  .username-container h4,
+  .location-time-container div {
+    font-size: 15px;
+  }
+
+  .user-bio {
+    font-size: 15px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  .about-section h3 {
+    font-size: 15px;
+  }
+
+  .about-list {
+    margin: 10px 0 18px 0;
+    font-size: 14px;
+  }
+
+  footer button {
+    height: 40px;
+    font-size: 15px;
+  }
 }
