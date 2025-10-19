@@ -2,11 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 body {
-  overflow: hidden;
   height: 100dvh;
   background-color: rgba(170, 188, 177, 0.854);
   display: flex;
