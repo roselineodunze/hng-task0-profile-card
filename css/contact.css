@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.title p {
+  text-align: center;
+}
+
+.form-container {
+  background-color: rgb(237, 244, 251);
+  background: 
+    radial-gradient(
+      ellipse at center bottom,
+      rgb(249, 251, 252) 0%,
+      rgb(249, 251, 252) 30%,
+      transparent 70.1%
+    ),
+    rgb(237, 244, 251);
+  width: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 530px;
+  border-radius: 100%;
+}
+
+.form-container h3 {
+  font-weight: 800;
+  text-align: center;
+}
+
+.form-container form {
+  width: 350px;
+  margin-top: 20px;
+}
+
+.success-message{
+  border: solid 1px black;
+  margin-bottom: 14px;
+  padding: 5px;
+  background-color: rgb(4, 152, 4);
+  font-size: 13px;
+  display: none;
+}
+
+.error-message{
+  color: red;
+  margin-top: 4px;
+  margin-left: 5px;
+  display: none;
+  font-size: 12px;
+}
+
+.form-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  gap: 5px;
+  border: solid 2px black;
+  box-shadow: 0 3px 0 black;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 14px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.form-field label,
+.message-field label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.form-field input,
+.message-field textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.form-field input::placeholder,
+.message-field textarea::placeholder {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-field input:focus,
+.message-field textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.message-field {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: solid 2px black;
+  box-shadow: 0 3px 0 black;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 14px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.message-field textarea {
+  height: 65px;
+}
+
+.submit-btn {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 14px;
+  border: solid 2px black;
+  box-shadow: 0 3px 0 black;
+  border-radius: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  background-color: rgb(184, 219, 249);
+}
+
+.submit-btn:hover{
+  background-color: rgb(240, 251, 168);
+
+}

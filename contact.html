@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <section class="title">
+      <h1>We've been waiting for you.</h1>
+      <p>We want to hear from you. Let us know how we can help.</p>
+    </section>
+
+    <section class="form-container">
+      <h3>Send us a Message</h3>
+      <form>
+        <output class="success-message" data-testid="test-contact-success" role="status" aria-live="polite">
+          <p>Success. Form submitted successfully.</p>
+        </output>
+        <div class="form-field">
+          <label for="full-name">Full Name:</label>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user-icon lucide-user"
+          >
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Enter your fullname"
+            pattern="^[A-Za-z' ]+$"
+            aria-describedby="name-error"
+            required
+            data-testid="test-contact-name"
+          />
+        </div>
+        <p
+          id="name-error"
+          class="error-message"
+          data-testid="test-contact-error-name"
+          role="alert"
+        >
+          Invalid name input
+        </p>
+
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-mail-icon lucide-mail"
+          >
+            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+          </svg>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            aria-describedby="email-error"
+            required
+            data-testid="test-contact-email"
+          />
+        </div>
+        <p
+          id="email-error"
+          class="error-message"
+          data-testid="test-contact-error-email"
+          role="alert"
+        >
+          No consecutive dots, and must not start or end with a dot
+        </p>
+
+        <div class="form-field">
+          <label for="subject">Subject:</label>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-pen-line-icon lucide-pen-line"
+          >
+            <path d="M13 21h8" />
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+          </svg>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Enter the subject of the message"
+            aria-describedby="subject-error"
+            required
+            data-testid="test-contact-subject"
+          />
+        </div>
+        <p
+          id="subject-error"
+          class="error-message"
+          data-testid="test-contact-error-subject"
+          role="alert"
+        >
+          Invalid Subject value
+        </p>
+
+        <div class="message-field">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Enter your message here..."
+            aria-describedby="message-error"
+            required
+            data-testid="test-contact-message"
+            
+          ></textarea>
+        </div>
+        <p
+          id="message-error"
+          class="error-message"
+          data-testid="test-contact-error-message"
+          role="alert"
+        >
+          Message must be at least 10 characters
+        </p>
+
+        <button
+          class="submit-btn"
+          type="submit"
+          data-testid="test-contact-submit"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

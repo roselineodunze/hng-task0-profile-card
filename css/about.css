@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 13%,
+    rgb(242, 243, 243) 13%,
+    rgb(242, 243, 243) 100%
+  );
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 15px 0 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  height: 50px;
+}
+
+.logo {
+  cursor: pointer;
+  width: 150px;
+}
+.logo h3 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.logo p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: -6px;
+}
+nav ul {
+  flex: 1;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+  text-transform: lowercase;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+nav ul li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+nav ul li:not(:hover)::after {
+  transform-origin: right;
+}
+
+article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.floating-section {
+  position: absolute;
+  top: 23%;
+  left: 70px;
+  z-index: 99;
+}
+
+.floating-section h2 {
+  font-size: 110px;
+  font-weight: 400;
+  width: 70px;
+  line-height: 0.8;
+}
+
+.floating-list {
+  position: absolute;
+  bottom: 30px;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  z-index: 99;
+}
+
+.floating-list li,
+.socials ul li {
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 12px;
+  list-style: none;
+}
+
+.positives {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.welcome {
+  display: flex;
+  align-items: end;
+}
+.welcome div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.welcome div h3 {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.dash-div {
+  width: 60px;
+  height: 2px;
+  background-color: black;
+}
+
+.quotes-section {
+  width: 100%;
+  margin: 30px 0 30px 0;
+  padding-left: 10px;
+  border-left: solid 1px black;
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.quotes-section div {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.quotes-section div p {
+  line-height: 1.3;
+  padding-right: 40px;
+  flex: 0 0 100%;
+}
+
+.reflections span,
+.future-self span,
+.goals section h3 {
+  font-weight: 800;
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.socials {
+  position: relative;
+}
+
+.socials ul {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 40px;
+  list-style: none;
+}
+
+.about-me {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
+  width: 13%;
+}
+
+.goals {
+  width: 100%;
+  margin-top: 30px;
+  height: 300px;
+  background-color: rgb(25, 85, 214);
+  position: relative;
+  color: rgb(242, 243, 243);
+}
+
+.goals figure {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.goals section {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+}
+
+.goals section h3 {
+  color: black;
+}
+
+.goals figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.goals section ul li {
+  font-size: 22px;
+  list-style: none;
+}
+
+.goals section ul li span {
+  width: 50px;
+  height: 2px;
+  background-color: black;
+}
+
+.bio-section {
+  margin: 30px 0 30px 0;
+  width: 100%;
+  height: 300px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.bio-section h3 {
+  position: relative;
+}
+
+.bio-section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 8%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: currentColor;
+}
+
+.user-bio,
+.reflections,
+.future-self {
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.bio-section section p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media (min-width: 800px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .hide {
+    display: block;
+  }
+
+  .show {
+    display: none;
+  }
+
+  .container {
+    padding: 0 0 0 50px;
+  }
+
+  nav {
+    margin-right: 70px;
+  }
+
+  .positives {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .welcome {
+    margin-left: 50px;
+  }
+
+  .quotes-section {
+    width: 35%;
+    margin: 0;
+  }
+
+  .about-me {
+    height: 60%;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .goals {
+    flex: 1;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .goals section {
+    top: 50%;
+    left: 20%;
+  }
+
+  .bio-section {
+    margin: 0;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  
+}
