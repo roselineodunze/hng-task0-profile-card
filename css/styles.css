@@ -200,6 +200,12 @@ footer button {
   border-radius: 10px;
   font-size: 13px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+footer button a{
+  text-decoration: none !important;
+  color: black;
 }
 
 footer button:nth-child(1) {
