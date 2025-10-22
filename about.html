@@ -14,11 +14,11 @@
           <p>frontend developer</p>
         </div>
         <ul>
-          <li>home</li>
-          <li>contact us</li>
-          <li class="show">tw</li>
-          <li class="show">in</li>
-          <li class="show">git</li>
+          <li><a>home</a></li>
+          <li><a href="/contact.html">contact us</a></li>
+          <li class="show"><a>tw</a></li>
+          <li class="show"><a>in</a></li>
+          <li class="show"><a>git</a></li>
         </ul>
       </nav>
       <article>
@@ -39,12 +39,12 @@
           </div>
           <section class="quotes-section">
             <div>
-              <p class="reflections">
+              <p class="reflections" data-testid="test-about-extra">
                 <span>Reflections</span>
                 Survival is not the end goal. Life is meant to be shaped, not
                 endured. Becoming is rewriting the script.
               </p>
-              <p class="future-self">
+              <p class="future-self" data-testid="test-about-future-note">
                 <span>Note to Future Self</span>
                 Transformation doesn’t happen by accident. It begins with
                 awareness and intention. Becoming is a choice made daily.
@@ -60,7 +60,7 @@
               <li>github</li>
             </ul>
           </div>
-          <section class="goals">
+          <section class="goals" data-testid="test-about-goals">
             <section>
               <h3>goals of the program</h3>
               <ul>
@@ -70,17 +70,17 @@
               </ul>
             </section>
             <figure>
-              <img src="images/my-pic.png" />
+              <img src="images/my-pic.png" alt="image of roseline"/>
             </figure>
           </section>
-          <section class="bio-section">
+          <section class="bio-section" data-testid="test-about-bio">
             <h3>Meet Roseline</h3>
-            <p class="user-bio">
+            <p class="user-bio" >
               I am a passionate Frontend Developer who turns figma designs into
               pixel perfect websites and look good while doing it.
             </p>
 
-            <section>
+            <section data-testid="test-about-confidence">
               <h3>Areas of low confidence: </h3>
               <p>Website responsiveness.</p>
             </section>
