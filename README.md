@@ -1,6 +1,7 @@
-💼 HNGi13 Task 0 – Profile Card
+💼 HNGi13 Task 0 and Task 1 – Profile Card & Contact Us Page & About me Page
 
-This is my submission for Task 0 of the HNG Internship 13. The task was to create a simple profile card using HTML, CSS, and JavaScript that displays basic information about me.
+This is my submission for Task 0 and Task 1 of the HNG Internship 13. The task was to create a simple profile card using HTML, CSS, and JavaScript that displays basic information about me. For task 1, i created a simple about me and contact us page. 
+
 
 Check it out: https://hng-task0-profile-card.vercel.app/
 
@@ -8,7 +9,9 @@ Check it out: https://hng-task0-profile-card.vercel.app/
     ✅ Responsive profile card layout
     ✅ Clean design using HTML & CSS
     ✅ Real-time interactivity (via JavaScript)
-    ✅ Includes personal info (name, address, socials, hobbies, dislikes, a photo of me)
+    ✅ Form Validation
+    ✅ Includes personal info (name, bio, address, socials, hobbies, dislikes, a photo of me, goals for the program, areas of low confidence, reflections, note to my future self)
+    
 
 🛠️ Tech Stack 
     ✔️HTML5 
